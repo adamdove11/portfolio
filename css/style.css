@@ -29,7 +29,7 @@ nav a, nav a:visited {
 	float: right;
 	text-decoration: none;
 	font-size: 1.2em;
-	color: black;
+	color: #708090;
 	box-sizing: border-box;
 	border-bottom: 3px solid rgba(0, 0, 0, 0);
 }
@@ -59,10 +59,10 @@ nav ul li {
 
 .photo-banner {
 	box-sizing: border-box;
-	height: 450px;
+	height: 400px;
 	background-image: url("../images/placeholder.jpg");
 	text-align: center;
-	font-size: 3rem;
+	font-size: 2rem;
 	padding-top: 8rem;
 	background-repeat: no-repeat;
 	  background-attachment: fixed;
@@ -89,6 +89,8 @@ nav ul li {
 .three-column {
 	display: block;
 	overflow: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .column {
@@ -96,12 +98,12 @@ nav ul li {
 	float: left;
 	width: 33%;
 	border: 1 solid black;
-	padding: 60px;
+	padding: 4rem 4rem 2rem 4rem;
 	text-align: center;
 }
 
 footer {
-	background: black;
+	background: #708090;
 	color: white;
 	font-size: .8rem;
 	text-align: center;
@@ -118,6 +120,8 @@ p {
 	display: block;
 	text-align: center;
 	overflow: auto;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 .portfolio {
@@ -158,11 +162,19 @@ p {
 .services-icons {
 	width: 100px;
 	height: 100px;
-	background: black;
+	background: #708090;
 	-moz-border-radius: 50px;
 	-webkit-border-radius: 50px;
 	border-radius: 50px;
 	margin: auto;
+	box-sizing: border-box;
+
+}
+
+.icons {
+	fill: white;
+	max-width: 100%;
+	max-height: 100%;
 }
 
 @media (max-width: 891px) {
