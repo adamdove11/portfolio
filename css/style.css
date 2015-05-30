@@ -1,0 +1,169 @@
+/*PSEUDOCODE FOR CSS STILL TO COME
+media query for break points:
+	-collapse nav into hamburger button
+	-make 3 column content stacked vertically 100% width
+	-resize portfolio thumbnails? make them stay square aspect ratio (equal width/height somehow?)
+
+*/
+
+
+body {
+	font-family: 'Oswald', Arial, sans-serif;
+	font-size: 1em;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.logo {
+	color: black;
+	width: 300px;
+	height: auto;
+	text-align: center;
+	display: inline-block;
+	background-size: contain;
+}
+
+nav a, nav a:visited {
+	list-style: none;
+	display: inline-block;
+	float: right;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: black;
+	box-sizing: border-box;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+
+nav a:hover {
+	color: #555;
+	border-bottom: 3px solid #555;
+	box-sizing: border-box;
+	transition-property: color, border-bottom;
+	transition-duration: 1.5s;
+	transition-timing-function: ease-out;
+}
+
+.menu {
+	list-style: none;
+	box-sizing: border-box;
+	padding: 20px 40px 0 0;
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	padding: 0 30px 0 30px;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+.photo-banner {
+	box-sizing: border-box;
+	height: 450px;
+	background-image: url("../images/placeholder.jpg");
+	text-align: center;
+	font-size: 3rem;
+	padding-top: 8rem;
+	background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  color: white;
+	  background-color: gray;
+	}
+
+.contact {
+	box-sizing: border-box;
+	height: auto;
+	
+	text-align: center;
+	font-size: 1rem;
+	padding-top: 3rem;
+	background-repeat: no-repeat;
+	  background-attachment: fixed;
+	  background-size: cover;
+	  color: white;
+	  background-color: gray;
+	}
+
+
+.three-column {
+	display: block;
+	overflow: auto;
+}
+
+.column {
+	box-sizing: border-box;
+	float: left;
+	width: 33%;
+	border: 1 solid black;
+	padding: 60px;
+	text-align: center;
+}
+
+footer {
+	background: black;
+	color: white;
+	font-size: .8rem;
+	text-align: center;
+	font-family: 'Quattrocento', sans-serif;
+	padding-top: .4rem;
+	height: auto;
+}
+
+p {
+	font-family: 'Quattrocento', sans-serif;
+}
+
+.content {
+	display: block;
+	text-align: center;
+	overflow: auto;
+}
+
+.portfolio {
+	box-sizing: border-box;
+	width: 20%;
+	background: gray;
+	border: 1px solid black;
+	float: left;
+	height: 16rem;
+	overflow: none;
+	box-sizing: border-box;
+	border: 1px solid white;
+	background: white;
+	overflow: none;
+}
+
+.portfolio:hover {
+	opacity: 0.9;
+	overflow: none;
+}
+
+.header {
+	background-color: rgba(255, 255, 255, .9);
+	display: block;
+	box-sizing: border-box;
+	padding: 20px 50px 20px 50px;
+	position: fixed;
+	width: 100%;
+  -webkit-box-shadow: 0px 0px 4px 0px #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow:    0px 0px 4px 0px #ccc;  /* Firefox 3.5 - 3.6 */
+  box-shadow:         0px 0px 4px 0px #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+}
+
+.thumbnail {
+	max-width: 100%;
+}
+
+@media (max-width: 891px) {
+/*
+make nav become a hamburger button
+*/
+}
+
+@media (max-width: 700px) {
+	.column {
+		width: 100%;
+		padding: 20px 60px 20px 60px;
+	}
+}
