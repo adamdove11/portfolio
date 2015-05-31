@@ -85,7 +85,7 @@ nav ul li {
 	display: block;
 	overflow: auto;
 	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .column {
@@ -93,7 +93,7 @@ nav ul li {
 	float: left;
 	width: 33%;
 	border: 1 solid black;
-	padding: 4rem 4rem 2rem 4rem;
+	padding: 1rem 4rem 1rem 4rem;
 	text-align: center;
 }
 
@@ -164,6 +164,8 @@ p {
 	border-radius: 50px;
 	margin: auto;
 	box-sizing: border-box;
+	padding-top: 8%;
+	padding-bottom: 5%;
 }
 
 .services-icons:hover {
@@ -174,26 +176,25 @@ p {
 }
 
 .icons {
-	fill: white;
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 80%;
+	max-height: 80%;
 }
 
 .h2 {
 	text-align: center;
 }
 
-.social-icons {
+.social-icons, .social-icons a, .social-icons a:visited  {
 	display: inline-block;
 	color: white;
 	padding: 20px;
 }
 
-.social-icons:hover {
-	transform: scale(1.2);
-	transition-duration: 0.5s;
+.social-icons a:hover {
+	color: black;
+	transition-property: color;
+	transition-duration: 0.8s;
 	transition-timing-function: ease-out;
-
 }
 
  .form{ 
@@ -208,9 +209,7 @@ p {
     margin: auto; 
     padding: 20px; 
 } 
-.content{ 
-    margin: 0px; 
-} 
+
 .form label{ 
     color: #222222; 
     font-size: 14px; 
@@ -224,9 +223,10 @@ p {
     display: block; 
 } 
 .form input, form textarea, form select{ 
-    border-width: 0px; 
-    border-color: #666666; 
-    border-radius: 5px; 
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 5px;
+    color: white;
     padding: 3px; 
     width: 100%; 
 } 
@@ -246,6 +246,13 @@ p {
     background-color: #fff; 
     color: #222222; 
 } 
+
+input, textarea {
+	background-color: #708090;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+}
+
 .field{ 
     margin-bottom: 30px; 
 } 

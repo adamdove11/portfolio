@@ -19,17 +19,18 @@
 <body>
 
 	<section class="header">
-		<div class="logo"><a href="#"><img src="images/ad-logo.png" class="logo"></a></div>
+		<div class="logo"><a href="#start"><img src="images/ad-logo.png" class="logo"></a></div>
 		<nav class="menu">
 			<ul>
+
 				<li><a href="#services">SERVICES</a></li>
 				<li><a href="#portfolio-section">PORTFOLIO</a></li>
-				<li><a href="#contact">CONTACT</a></li>
+				<li><a href="#contact-section">CONTACT</a></li>
 			</ul>
 		</nav>
 	</section>
 	
-	<section class="banner">
+	<section class="banner" id="start">
 		<h2>HI, I'M ADAM.</h2>
 		<p>I'm a writer, editor, and designer based in Washington, D.C.</p>
 	</section>
@@ -88,28 +89,37 @@
 
 	</section>
 
-	<section class="contact">
+	<section class="contact" id="contact-section">
 		<h2>CONTACT</h2>
 		<div class="social-icons">
-			<i class="fa fa-linkedin-square fa-3x"></i>
+			<a href="https://www.linkedin.com/in/adamdove" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
 		</div>
 		<div class="social-icons">
-			<i class="fa fa-twitter-square fa-3x"></i>
+			<a href="https://www.twitter.com/adamdove" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
 		</div>
 		<div class="social-icons">
-			<i class="fa fa-github-square fa-3x"></i>
+			<a href="https://github.com/adamdove11" target="_blank">
+			<i class="fa fa-github-square fa-3x"></i></a>
 		</div>
 
-		<form id="form" class="form" method="post" enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
-    <div>
-        <div class="intro"></div>
-        <div id="section0" >
-            <div class="field"><label for="Name"></label><input type="text" id="Name" name="Name" placeholder="Name" required autofocus></div>
-            <div class="field"><label for="EmailAddress"></label><input type="text" id="EmailAddress" name="EmailAddress" placeholder="EMAIL ADDRESS" required autofocus></div>
-            <div class="field"><div class="edit-options"><div class="edit"></div><div class="delete"></div></div><label for="Message"></label><textarea id="Message" name="Message" placeholder="MESSAGE" wrap="hard" required autofocus></textarea></div>
-            <div class="field"><label for="SUBMIT"></label><input type="submit" id="SUBMIT" name="SUBMIT"></div>
-        </div>
-    </div>
+		<form id="form" class="form" method="post" action="mailto:adam.d.dove@gmail.com"enctype="application/x-www-form-urlencoded" accept-charset="UTF-8">
+		    <div>
+		        <div class="intro"></div>
+		        <div>
+		            <div class="field">
+		            	<label for="Name"></label><input type="text" id="Name" name="Name" placeholder="NAME" required autofocus></div>
+		            <div class="field">
+		            	<label for="EmailAddress"></label>
+		            	<input type="text" id="EmailAddress" name="EmailAddress" placeholder="EMAIL ADDRESS" required autofocus>
+		            </div>
+		            <div class="field">
+		            	<label for="Message"></label><textarea id="Message" name="Message" placeholder="MESSAGE" wrap="hard" required autofocus></textarea>
+		            </div>
+		            <div class="field">
+		            	<label for="SUBMIT"></label><input type="submit" id="SUBMIT" name="SUBMIT">
+		            </div>
+		        </div>
+		    </div>
 </form>
 
 	</section>
@@ -117,6 +127,11 @@
 	<script src="assets/lightbox/js/jquery-1.11.0.min.js"></script>
 
 	<script src="assets/lightbox/js/lightbox.min.js"></script>
+
+	<script type="text/javascript" src="js/javascript.js"></script>
+
+	<script src="assets/isotope/isotope.pkgd.min.js"></script>
+
 		
 </body>
 
