@@ -1,3 +1,5 @@
+//smooth scrolling from navigation to ID
+
 $('a[href^="#"]').on('click', function(event) {
 
     var target = $( $(this).attr('href') );
