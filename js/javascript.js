@@ -13,7 +13,7 @@ $('a[href^="#"]').on('click', function(event) {
 
 });
 
-
+//toggle navigation when clicking hamburger
 
 $(document).ready(function() {
     $('.hamburger').on('click', function() {
