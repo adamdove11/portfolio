@@ -75,7 +75,7 @@ nav ul li {
 	font-size: 1rem;
 	padding-top: 3rem;
 	color: white;
-	background-image: url("../images/contact-bg.png");
+	background-image: url("../images/contact-bg4.png");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
@@ -122,6 +122,7 @@ p {
 	margin: auto;
 	text-align: center;
 	height: auto;
+	padding-bottom: 2rem;
 }
 
 .portfolio {
@@ -278,16 +279,60 @@ input, textarea {
     margin-bottom: 30px; 
 } 
 
+.hamburger {
+	color: black;
+	text-decoration: none;
+}
 
-@media (max-width: 891px) {
-/*
-make nav become a hamburger button
-*/
+.mobile-only {
+	display: none;
+}
+
+@media (max-width: 1030px) {
+	.hamburger {
+	color: black;
+	text-decoration: none;
+}
+
+	.hamburger:hover {
+		border-bottom: none;
+	}
+
+	.desktop-only {
+	display: none;
+	}
+
+	.mobile-only {
+	display: inline-block;
+	float: right;
+	}
+
+	nav ul li {
+	width: 100%;
+	text-align: right;
+	}
+
+	.menu {
+		width: 20%;
+	}
+
+	.navigation {
+		width: 50%;
+	}
 }
 
 @media (max-width: 700px) {
 	.column {
 		width: 100%;
 		padding: 20px 60px 20px 60px;
+	}
+
+	.desktop-only {
+	display: none;
+	}
+
+	.thumbnail {
+		display: block;
+		width: auto;
 	}
 }

@@ -12,3 +12,12 @@ $('a[href^="#"]').on('click', function(event) {
     }
 
 });
+
+
+
+$(document).ready(function() {
+    $('.hamburger').on('click', function() {
+        $('.navigation').slideToggle();
+    }
+    );
+});
