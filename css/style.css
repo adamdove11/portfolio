@@ -12,17 +12,27 @@ body {
 .body-copy {
 	line-height: 150%;
 	font-weight: 300;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
+}
+
+.body-copy a {
+	text-decoration: underline;
+	color: #111;
 }
 
 .logo {
-	color: black;
-	width: 300px;
-	height: auto;
+	color: #00FFFF;
+	width: 75px;
+	height: 75px;
 	text-align: center;
 	display: inline-block;
 	background-size: contain;
-	padding-top: 40px;
+	padding-top: 22px;
+	font-size: 1.8rem;
+	text-weight: 700;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	border: 1px solid #00ffff;
+	border-radius: 50%;
 }
 
 nav a, nav a:visited, nav a:active {
@@ -38,8 +48,8 @@ nav a, nav a:visited, nav a:active {
 }
 
 nav a:hover {
-	color: #708090;
-	border-bottom: 3px solid #555;
+	color: #00ffff;
+	border-bottom: 3px solid #00FFFF;
 	box-sizing: border-box;
 	transition-property: color, border-bottom;
 	transition-duration: 0.8s;
@@ -119,12 +129,12 @@ content: "";
 }
 
 footer {
-	background: #708090;
-	color: white;
-	font-size: .8rem;
+	height: 75px;
+	font-size: 0.75rem;
+	background: #111;
+	color: #fff;
 	text-align: center;
-	padding-top: .4rem;
-	height: auto;
+	padding-top: 25px;
 }
 
 .content {
@@ -135,10 +145,10 @@ footer {
 }
 
 .cta {
-	border: 1px solid #fff;
+	border: 1px solid #00FFFF;
 	padding: 1rem;
 	text-decoration: none;
-	color: #fff;
+	color: #00FFFF;
 	text-transform: uppercase;
 	letter-spacing: 7px;
 	margin-top: 20px;
@@ -185,18 +195,19 @@ footer {
     display: none;
     color: #FFF;
     box-sizing: border-box;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
 }
 .portfolio:hover .after {
     display: block;
     background: rgba(0, 0, 0, .5);
-    transition: all 0.5s ease;
+    transform: scale(1.1);
+    transition: all 1s ease;
 }
 
 header {
 	display: block;
 	box-sizing: border-box;
-	padding: 10px 50px 10px 50px;
+	padding: 1rem 5rem 1rem 5rem;
 	position: fixed;
 	width: 100%;
   -webkit-box-shadow: 0 0 4px 0 #ccc;  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
