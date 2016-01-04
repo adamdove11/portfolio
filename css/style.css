@@ -1,8 +1,18 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
-	font-family: 'Montserrat', Arial, sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 16px;
 	margin: 0;
 	box-sizing: border-box;
+}
+
+.body-copy {
+	line-height: 150%;
+	font-weight: 300;
+	margin-bottom: 20px;
 }
 
 .logo {
@@ -12,6 +22,7 @@ body {
 	text-align: center;
 	display: inline-block;
 	background-size: contain;
+	padding-top: 40px;
 }
 
 nav a, nav a:visited, nav a:active {
@@ -19,10 +30,11 @@ nav a, nav a:visited, nav a:active {
 	display: inline-block;
 	float: right;
 	text-decoration: none;
-	font-size: 1.4em;
-	color: black;
+	color: white;
 	box-sizing: border-box;
 	border-bottom: 3px solid rgba(0, 0, 0, 0);
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+	font-weight: 300;
 }
 
 nav a:hover {
@@ -50,18 +62,35 @@ nav ul li {
 
 .banner {
 	box-sizing: border-box;
-	height: 400px;
+	height: 100vh;
 	text-align: center;
-	font-size: 2rem;
 	padding-top: 8rem;
-	padding-left: 10%;
-	padding-right: 10%;
+	padding-left: 20%;
+	padding-right: 20%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	color: white;
-	background-image: url("../images/banner-bg.png");
+	color: #fff;
 	}
+
+.banner:before {
+content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: -1;
+  	background: url('../images/desktop.jpg');
+	background-size: cover; 
+	 -webkit-filter: grayscale(1);
+	  filter: grayscale(1);
+	  -webkit-filter: brightness(25%);
+	  filter: brightness(25%);
+	  color: white;
+	  display: block;
+	  width: inherit;
+	  height: inherit;
+}
 
 .contact {
 	box-sizing: border-box;
@@ -69,18 +98,15 @@ nav ul li {
 	text-align: center;
 	font-size: 1rem;
 	padding: 5rem 0 5rem 0;
-	color: white;
-	background-image: url("../images/contact-bg4.png");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: 50px 0 0 0;
+	color: #111;
+	background: #fff;
 }
 
-.three-column {
+.about {
 	display: block;
 	overflow: auto;
-	padding-top: 2rem;
-	padding-bottom: 1rem;
+	background: #fff;
+	padding: 2rem 5rem;
 }
 
 .column {
@@ -97,13 +123,8 @@ footer {
 	color: white;
 	font-size: .8rem;
 	text-align: center;
-	font-family: 'Quattrocento', sans-serif;
 	padding-top: .4rem;
 	height: auto;
-}
-
-p {
-	font-family: 'Quattrocento', sans-serif;
 }
 
 .content {
@@ -113,11 +134,32 @@ p {
 	padding-bottom: 2rem;
 }
 
+.cta {
+	border: 1px solid #fff;
+	padding: 1rem;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	margin-top: 20px;
+	font-weight: 300;
+}
+
+.headshot {
+	float: left;
+	background-color: #111;
+	height: 300px;
+	width: 33%;
+	margin-right: 2rem;
+}
+
 #portfolio-section {
 	margin: auto;
 	text-align: center;
 	height: auto;
-	padding-bottom: 2rem;
+	padding: 2rem 0 2rem 0;
+	background: #111;
+	color: #fff;
 }
 
 .portfolio {
@@ -127,7 +169,7 @@ p {
 	overflow: none;
 	box-sizing: border-box;
 	border: 1px solid gray;
-	margin: 20px;
+	margin: 0.2rem;
 	background: white;
 	z-index: 1;
 	position: relative;
@@ -152,7 +194,6 @@ p {
 }
 
 header {
-	background-color: rgba(255, 255, 255, .9);
 	display: block;
 	box-sizing: border-box;
 	padding: 10px 50px 10px 50px;
@@ -162,6 +203,8 @@ header {
   -moz-box-shadow:    0 0 4px 0 #ccc;  /* Firefox 3.5 - 3.6 */
   box-shadow:         0 0 4px 0 #ccc;  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   z-index: 2;
+  color: #fff;
+  background-color: rgba(20, 20, 20, 0.8);
 }
 
 .thumbnail {
@@ -208,14 +251,21 @@ header {
 	top: 25%;
 }
 
-.h2 {
-	text-align: center;
+h1 {
+	margin-top: 8rem;
+	text-transform: uppercase;
+	font-size: 3rem;
+	font-family: 'Roboto Condensed', Helvetica, Arial, sans-serif;
+}
+
+h2 {
+	text-transform: uppercase;
 }
 
 .social-icons, .social-icons a, .social-icons a:visited  {
 	display: inline-block;
-	color: white;
-	padding: 20px;
+	color: #111;
+	padding: 0.5rem;
 }
 
 .social-icons a:hover {
