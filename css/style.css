@@ -89,7 +89,8 @@ nav ul li {
 	background-attachment: fixed;
 	background-size: cover;
 	color: #fff;
-	}
+	overflow: visible;
+}
 
 .banner:before {
 content: "";
@@ -179,6 +180,39 @@ footer {
 	color: #fff;
 }
 
+.case-study {
+	box-sizing: border-box;
+	width: 83%;
+	height: auto;
+	margin: 0.6rem auto 0.6rem auto;
+	z-index: 1;
+	display: inline-block;
+	position: relative;
+	overflow: auto;
+	text-align: center;
+	display: block;
+}
+
+.case-study .after {
+    padding-top: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: #fff;
+    background-color:rgba(0,0,0,0.8);
+    box-sizing: border-box;
+    transition: all 1s ease;
+}
+
+.case-study:hover .after {
+    background: rgba(0, 0, 0, .9);
+    transition: all 1s ease;
+    content: Hover content;
+}
+
 .portfolio {
 	width: 20%;
 	display: inline-block;
@@ -264,7 +298,7 @@ h2 {
 } 
 
 .hamburger {
-	color: black;
+	color: white;
 	text-decoration: none;
 }
 
@@ -288,7 +322,7 @@ h2 {
 
 @media (max-width: 700px) {
 	.hamburger {
-	color: black;
+	color: white;
 	text-decoration: none;
 	font-size: 1.5rem;
 }
@@ -326,8 +360,9 @@ h2 {
 	}
 
 	.banner {
-		height: 350px;
-			padding: 7rem 10%0 10%;
+		height: 450px;
+		padding: 7rem 10%0 10%;
+		overflow: visible;
 	}
 
 	h1 {
@@ -344,6 +379,7 @@ h2 {
 	letter-spacing: 4px;
 	margin-top: 5px;
 	font-weight: 300;
+	display: inline-block;
 }
 
 	.about {
