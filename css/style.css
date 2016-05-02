@@ -188,7 +188,6 @@ footer {
 	z-index: 1;
 	display: inline-block;
 	position: relative;
-	overflow: auto;
 	text-align: center;
 	display: block;
 }
