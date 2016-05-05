@@ -190,6 +190,8 @@ footer {
 	position: relative;
 	text-align: center;
 	display: block;
+	background: url('images/shifty-case-study.png');
+	background: cover;
 }
 
 .case-study .after {
@@ -203,13 +205,12 @@ footer {
     color: #fff;
     background-color:rgba(0,0,0,0.8);
     box-sizing: border-box;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .case-study:hover .after {
     background: rgba(0, 0, 0, .9);
-    transition: all 1s ease;
-    content: Hover content;
+    transition: all 0.5s ease;
 }
 
 .portfolio {
@@ -235,13 +236,12 @@ footer {
     display: none;
     color: #FFF;
     box-sizing: border-box;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 .portfolio:hover .after {
     display: block;
     background: rgba(0, 0, 0, .5);
-    transform: scale(1.1);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 header {
@@ -264,6 +264,7 @@ header {
   	max-width: 100%;
   	max-height: 100%;
   	overflow: none;
+  	box-sizing: border-box;
 }
 
 
