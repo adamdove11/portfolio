@@ -192,6 +192,7 @@ footer {
 	display: block;
 	background: url('images/shifty-case-study.png');
 	background: cover;
+	overflow: hidden;
 }
 
 .case-study .after {
